@@ -112,42 +112,57 @@ flowchart TD
     S -->|start_workflow| P
 
     subgraph "Temporal Runtime"
-        P["DeepAgentWorkflow (workflow.py)"]
+        P["DeepAgentWorkflow"]
         LLM["Activity: llm_step"]
-        D["_dispatch (workflow.py)"]
-        GR["_run_tool activity"]
+        D["_dispatch"]
+
+        WT["write_todos\n(kind: in_workflow)"]
+        TK["task"]
+        GT["Generic tools\n(read/write/edit_file,\nls, glob, grep)"]
+        WS["web_search\n(kind: dedicated)"]
+
+        RT["_run_tool activity"]
+        WSA["web_search activity"]
         BK["backend.py (LocalFSBackend)"]
-        WS["web_search activity"]
         TV["TavilyClient"]
-        V{"task: validate<br/>cap / type"}
-        CH["SubAgentWorkflow (subagent_workflow.py)"]
+
+        V{"validate: task?"}
+        CH["SubAgentWorkflow"]
         CLLM["Activity: llm_step (child)"]
-        CTK["Child _dispatch (subagent_workflow.py)"]
+        CTK["Child _dispatch"]
+        CR["continue-as-new"]
+        FS["fs_data/reports/{topic-slug}.md"]
 
         P --> LLM
-        P --> D
+        LLM -->|tool_calls| D
 
-        D -->|in_workflow: write_todos| P
-        D -->|generic| GR
-        GR --> BK
-        D -->|dedicated| WS
-        WS --> TV
+        D -->|write_todos| WT
+        WT -->|"save to state"| P
+
         D -->|task| V
         V -->|pass| CH
         V -->|fail| P
 
+        D -->|generic| GT
+        GT --> RT
+        RT --> BK
+
+        D -->|dedicated| WS
+        WS --> WSA
+        WSA --> TV
+
         CH --> CLLM
-        CH --> CTK
-        CTK -->|generic| GR
+        CLLM -->|tool_calls| CTK
+        CTK -->|generic| GT
         CTK -->|dedicated| WS
-        CTK -->|in_workflow| CH
+        CTK -->|write_todos| CH
     end
 
-    P --> R["Final answer to caller"]
     CH -->|string result| P
-    P --> CR["continue-as-new"]
+    P --> R["Final answer to caller"]
+    P --> CR
     CR --> P
-    P --> FS["fs_data/reports/{topic-slug}.md"]
+    P --> FS
 ```
 
 ## Sequence diagrams
