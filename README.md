@@ -105,6 +105,8 @@ The LLM calls tools via tool schemas. Tools are registered in `activities/tools.
 
 ![Temporal Deep Agent Architecture](docs/temporal_deep_agent.png)
 
+![Temporal Workflow Screenshot](docs/temporal.png)
+
 ## Sequence diagrams
 
 ### 1) Parent workflow with delegation (Route A)
