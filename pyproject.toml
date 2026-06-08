@@ -1,0 +1,15 @@
+[project]
+name = "temporal-deep-agent"
+version = "0.1.0"
+description = "Deep agent harness (planning, sub-agents, virtual FS) running on Temporal"
+requires-python = ">=3.11"
+dependencies = [
+    "temporalio[langgraph]>=1.27.0",
+    "deepagents>=0.6.0",
+    "langchain>=0.3",
+    "langchain-openai",
+    "langchain-ollama",
+    "tavily-python",
+    "python-dotenv",
+    "pydantic>=2",
+]

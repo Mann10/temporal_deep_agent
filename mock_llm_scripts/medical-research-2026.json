@@ -1,0 +1,137 @@
+{
+  "name": "medical-research-2026",
+  "description": "Replay of a real run: research AI in medical industry 2026. 11 LLM turns: write_todos, 5 batches of web_search (4+4+4+3+4), write_todos updates, write_file to reports/, final answer. No subagent spawned.",
+  "steps": [
+    {
+      "role": "assistant",
+      "content": "I'll research AI in the medical industry for 2026 and put together a comprehensive overview.",
+      "tool_calls": [
+        {
+          "id": "call_function_0hv7ov8rivzj_1",
+          "name": "write_todos",
+          "args": {
+            "todos": [
+              {"content": "Research current state of AI in medical industry (2025-2026)", "status": "in_progress"},
+              {"content": "Research key application areas (diagnostics, drug discovery, clinical workflows, etc.)", "status": "pending"},
+              {"content": "Research market size, leading companies, and investments", "status": "pending"},
+              {"content": "Research regulatory landscape (FDA, EMA, etc.) and challenges", "status": "pending"},
+              {"content": "Research future trends and 2026 outlook", "status": "pending"},
+              {"content": "Synthesize findings into a final report", "status": "pending"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {"id": "call_function_7phq3wkpayk4_1", "name": "web_search", "args": {"query": "AI in medical industry 2026 trends outlook applications"}},
+        {"id": "call_function_7phq3wkpayk4_2", "name": "web_search", "args": {"query": "AI medical diagnostics FDA approved 2025 2026"}},
+        {"id": "call_function_7phq3wkpayk4_3", "name": "web_search", "args": {"query": "AI drug discovery market 2026 pharmaceutical"}},
+        {"id": "call_function_7phq3wkpayk4_4", "name": "web_search", "args": {"query": "generative AI healthcare hospitals clinical workflows 2026"}}
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_function_s8yzzv7jn3yk_1",
+          "name": "write_todos",
+          "args": {
+            "todos": [
+              {"content": "Research current state of AI in medical industry (2025-2026)", "status": "done"},
+              {"content": "Research key application areas (diagnostics, drug discovery, clinical workflows, etc.)", "status": "in_progress"},
+              {"content": "Research market size, leading companies, and investments", "status": "pending"},
+              {"content": "Research regulatory landscape (FDA, EMA, etc.) and challenges", "status": "pending"},
+              {"content": "Research future trends and 2026 outlook", "status": "pending"},
+              {"content": "Synthesize findings into a final report", "status": "pending"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {"id": "call_function_i2vuatw12hgk_1", "name": "web_search", "args": {"query": "agentic AI healthcare hospitals 2026 ambient scribes"}},
+        {"id": "call_function_i2vuatw12hgk_2", "name": "web_search", "args": {"query": "AI medical imaging radiology 2026 deep learning"}},
+        {"id": "call_function_i2vuatw12hgk_3", "name": "web_search", "args": {"query": "AI precision medicine genomics personalized treatment 2026"}},
+        {"id": "call_function_i2vuatw12hgk_4", "name": "web_search", "args": {"query": "AI mental health chatbots therapy 2026"}}
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {"id": "call_function_0cx9mk1587yt_1", "name": "web_search", "args": {"query": "FDA AI medical device regulation 2026 PCCP guidance"}},
+        {"id": "call_function_0cx9mk1587yt_2", "name": "web_search", "args": {"query": "AI healthcare market size leading companies 2026"}},
+        {"id": "call_function_0cx9mk1587yt_3", "name": "web_search", "args": {"query": "AI healthcare challenges bias privacy 2026"}},
+        {"id": "call_function_0cx9mk1587yt_4", "name": "web_search", "args": {"query": "robotic surgery AI 2026 surgical robotics"}}
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {"id": "call_function_lr6ve2wv5mhp_1", "name": "web_search", "args": {"query": "EU AI Act healthcare medical devices 2026"}},
+        {"id": "call_function_lr6ve2wv5mhp_2", "name": "web_search", "args": {"query": "AI clinical decision support CMS reimbursement 2026"}},
+        {"id": "call_function_lr6ve2wv5mhp_3", "name": "web_search", "args": {"query": "AI drug discovery 2026 Insilico Recursion clinical trials pipeline"}}
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {"id": "call_function_0ikfp6ja0lph_1", "name": "web_search", "args": {"query": "AI healthcare investment funding 2025 2026 venture capital"}},
+        {"id": "call_function_0ikfp6ja0lph_2", "name": "web_search", "args": {"query": "\"digital twin\" patient healthcare AI 2026"}},
+        {"id": "call_function_0ikfp6ja0lph_3", "name": "web_search", "args": {"query": "AI nursing virtual nursing assistant 2026 workforce shortage"}}
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "With substantial information. Let me do one more targeted search to round out the picture on key emerging trends and 2026-specific data.",
+      "tool_calls": [
+        {"id": "call_function_mla5k5i1fgnf_1", "name": "write_todos", "args": {"todos": [
+          {"content": "Research current state of AI in medical industry (2025-2026)", "status": "done"},
+          {"content": "Research key application areas (diagnostics, drug discovery, clinical workflows, etc.)", "status": "done"},
+          {"content": "Research market size, leading companies, and investments", "status": "in_progress"},
+          {"content": "Research regulatory landscape (FDA, EMA, etc.) and challenges", "status": "pending"},
+          {"content": "Research future trends and 2026 outlook", "status": "pending"},
+          {"content": "Synthesize findings into a final report", "status": "pending"}
+        ]}}
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {"id": "call_function_xurde6z3zavg_1", "name": "write_file", "args": {
+          "path": "reports/ai-medical-industry-2026.md",
+          "content": "# AI in the Medical Industry — 2026 Report\n\n## Executive Summary\n\nArtificial intelligence has moved from pilot programs to core clinical infrastructure in 2026. Adoption is broad, regulation is catching up, and capital is flowing — but the industry is also grappling with bias, reimbursement gaps, and the \"shadow AI\" problem. The defining story of 2026 is the shift from experimental generative AI tools to embedded, agentic, and clinically validated AI systems that operate inside the daily workflows of hospitals, pharma companies, and physician practices.\n\n---\n\n## 1. Market Size & Investment\n\n- **Global AI in healthcare market:** ~$37B in 2025 → projected ~$51B in 2026, growing to ~$744B by 2035 (CAGR ~35%). Alternative estimates put the 2025 figure at $22.2B with a CAGR of 47% reaching ~$720B by 2034.\n- **AI in pharmaceuticals:** ~$2.0B in 2025 → ~$2.5B in 2026 → projected $21.5B by 2035 (CAGR 27%).\n- **Healthcare VC investment in AI exceeded $18B in 2025**, with AI capturing roughly 46% of all healthcare investment dollars and 54% of digital health funding.\n- Mega-rounds ($300M+) and AI-native platforms (Commure at a $7B valuation, Abridge, Innovaccer) drove most of the activity.\n- \"AI-services-as-software\" is the emerging business model: human-quality clinical outcomes at software-level gross margins (70–80%+).\n\n---\n\n## 2. Key Application Areas\n\n### 2.1 Diagnostics & Medical Imaging\n- The FDA's list of AI/ML-enabled medical devices crossed **1,000 in radiology alone** by end of 2025, with a cumulative total of **1,451 AI-enabled devices**.\n- 2025 saw **295 new FDA AI/ML clearances** (up from just 6 in 2015).\n- Radiomics + deep learning models are matching or exceeding expert radiologists in sensitivity/specificity for CT, MRI, X-ray, mammography, ultrasound, and PET.\n- Recent studies show AI can handle **>75% of routine mammography double-reads**, freeing radiologists to focus on higher-risk cases.\n\n### 2.2 Drug Discovery & Development\n- AI-discovered candidates are now in active clinical trials. Recursion, Insilico Medicine, Atomwise, Exscientia, BenevolentAI, and Isomorphic Labs (Alphabet) lead the field.\n- Insilico Medicine has 28 drug candidates from its generative Pharma.AI platform; ~half are in clinical trials.\n- Recursion's REC-4881 delivered the platform's first clinical proof-of-concept.\n- Use cases: target identification, de novo molecular design, ADMET prediction, clinical trial optimization (\"ClinTech\"), and digital twins of patients.\n- AI in drug discovery is segment-dominant — ~41% of the AI pharma market — with oncology and neurology as leading therapeutic areas.\n\n### 2.3 Clinical Workflows & Ambient AI\n- **AI ambient scribes** are the fastest-growing healthcare AI category — ~$600M in revenue in 2025, up 2.4× year-over-year. Examples: Epic's AI Charting, Microsoft Dragon Copilot, Oracle Health Clinical AI Agent, Commure Scribe, Abridge.\n- A JAMA study showed ambient scribes cut EHR time by ~13.4 minutes and documentation time by ~16 minutes per encounter.\n- Emory Healthcare saw a 30.7% increase in clinician well-being metrics.\n- **Revenue cycle AI:** 63% of organizations have integrated AI into RCM, primarily for coding, documentation, and prior authorization.\n- Admin costs are >40% of total hospital expenses — automation could eliminate up to $360B in wasteful spending.\n\n### 2.4 Precision Medicine & Genomics\n- AI is integrating genomic profiles, EHRs, imaging, and wearables into individualized treatment plans.\n- 2026 marks the convergence of approved CRISPR therapies, the FDA's \"plausible mechanism\" regulatory pathway, AI diagnostics, and liquid biopsy.\n- AI + CRISPR enables targeted therapeutics in oncology, rheumatology (SLE, RA), and rare disease.\n- Digital twin technology is moving from concept to clinical pilots.\n\n### 2.5 Surgical Robotics\n- AI-powered surgical systems continue to expand. **Intuitive Surgical (da Vinci)** remains the leader; competitors include Medtronic (Hugo, FDA-cleared for urology), CMR Surgical (Versius), Stryker (Mako — orthopedics), Zimmer Biomet (ROSA), Johnson & Johnson, and Shanghai MicroPort MedBot.\n- Three \"waves\" of surgical AI: descriptive, generative, and agentic.\n- Telesurgery milestones: Indonesia's first remote renal cyst surgery in 2024 (1,200 km between Bali and Jakarta); EAU's 2025 telesurgery policy framework.\n\n### 2.6 Mental Health\n- AI chatbot therapists (Woebot, Wysa, Ebb by Headspace, Flourish, Ash by Slingshot) address therapist shortages — 60% of the world lacks adequate mental health access; 150M+ Americans live in provider-shortage areas.\n- Generative AI tools like Therabot deliver personalized CBT-style support.\n- However, 2026 has seen growing concern: regulators and child-safety advocates warn of risks when minors use therapy chatbots, calling for stronger oversight.\n\n### 2.7 Virtual Nursing & Workforce Support\n- The AI-based virtual nursing assistant market is growing at ~15.5% CAGR (2026–2035).\n- AI handles routine monitoring, patient education, and handoffs — freeing human nurses for higher-acuity care and addressing the global nursing shortage.\n\n### 2.8 Agentic & Autonomous Clinical Operations\n- Multi-agent AI systems (vs. single LLMs) outperform standalone models by a median 53% accuracy gain on clinical tasks (systematic review, 2026).\n- Use cases: autonomous care coordination, adaptive clinical pathways, predictive patient flow, robotic lab automation.\n\n---\n\n## 3. Regulatory Landscape\n\n### United States (FDA)\n- The **Predetermined Change Control Plan (PCCP)** final guidance (Dec 2024) lets manufacturers pre-authorize AI/ML updates without new 510(k), De Novo, or PMA submissions — provided changes follow the locked plan (Description of Modifications, Modification Protocol, Impact Assessment).\n- This is the FDA's core mechanism for handling adaptive/self-learning algorithms.\n- Generative AI medical devices are still under active scrutiny; the FDA has begun treating AI chatbots as medical devices when used for clinical advice.\n\n### European Union\n- The **EU AI Act** took effect in 2024, with the most consequential provisions (including high-risk system obligations) becoming applicable **August 2, 2026**.\n- AI-enabled medical devices are automatically classified as **high-risk AI systems** under the Act, requiring conformity assessments, risk management, data quality, transparency, human oversight, and post-market monitoring.\n- A December 2025 EU Commission proposal seeks to harmonize the AI Act with the Medical Device Regulation (MDR) and IVDR — a \"digital omnibus\" simplification effort.\n\n### Reimbursement\n- **CMS** is beginning to establish payment codes for clinical AI. A landmark 2026 CMS code was created for **AI-detected coronary calcium** scoring — a first-of-its-kind reimbursement pathway.\n- Bessemer Venture Partners predicts CMS will attempt to formalize broader clinical AI payment codes in 2026–2027.\n\n---\n\n## 4. Key Challenges\n\n1. **Algorithmic bias** — A 2025 *npj Digital Medicine* review found ~50% of healthcare AI studies had high risk of bias, often from non-representative training data.\n2. **Data privacy & HIPAA/GDPR compliance** — patient data is among the most sensitive; breaches are heavily regulated.\n3. **\"Shadow AI\"** — clinicians using unvetted public LLMs (ChatGPT, etc.) for clinical decisions; Wolters Kluwer calls this the top emerging risk.\n4. **Reimbursement gaps** — most clinical AI tools still lack clear payment pathways, limiting scaling.\n5. **Validation rigor** — moving beyond benchmark wins to real-world clinical evaluation is now a regulatory and clinical priority.\n6. **Liability and accountability** — when an AI's recommendation causes harm, it's unclear who is legally responsible.\n7. **Integration with legacy EHR systems** — remains a costly bottleneck.\n\n---\n\n## 5. Leading Companies & Players\n\n| Segment | Notable Companies |\n|---|---|\n| AI Drug Discovery | Recursion, Insilico Medicine, Atomwise, Exscientia, BenevolentAI, Isomorphic Labs (Alphabet), XtalPi, Standigm, Owkin, Evotec |\n| Medical Imaging AI | Aidoc, Viz.ai, HeartFlow, Annalise.ai, RapidAI |\n| Ambient Scribes / Documentation | Microsoft (Dragon Copilot), Epic, Abridge, Commure, Suki, Nuance |\n| Surgical Robotics | Intuitive Surgical, Medtronic, Stryker, Zimmer Biomet, CMR Surgical, J&J, MicroPort MedBot |\n| Clinical Decision Support | Wolters Kluwer (UpToDate Expert AI), RAAPID, Tempus |\n| Healthcare Platforms | Commure, Innovaccer, Hippocratic AI, Augmedix |\n| Digital Therapeutics / Mental Health | Woebot, Wysa, Headspace, Flourish, Slingshot AI, Therabot |\n\n---\n\n## 6. 2026 Trends to Watch (Bessemer / Deloitte / Wolters Kluwer consensus)\n\n1. **Clinical-grade generative AI** becomes a trusted copilot embedded in workflows (not a separate tool).\n2. **Agentic AI** moves from demos to production — autonomous care pathways and multi-agent clinical systems.\n3. **CMS formalizes AI payment codes** beyond coronary calcium.\n4. **Cash-pay / consumer AI health** accelerates faster than reimbursed clinical AI (LLM health companions, longevity, concierge).\n5. **AI data infrastructure** becomes a recognized category (federated learning, de-identification, synthetic data).\n6. **Value-based care** has an AI-powered comeback — risk stratification, care gap closure, coding accuracy.\n7. **Governance frameworks** catch up — formal AI policies, model registries, ongoing post-deployment monitoring.\n8. **AI scribes cross the chasm** from pilot to enterprise standard.\n9. **Specialty-by-specialty AI rollout** — cardiology, oncology, radiology, pathology each get purpose-built models.\n10. **Telesurgery + 5G** becomes commercially viable in more regions.\n\n---\n\n## 7. Outlook\n\n2026 is best described as the year AI becomes **infrastructure** in medicine — not a flashy demo, but a quietly essential layer underneath diagnostics, drug pipelines, clinical documentation, surgical suites, and patient engagement. The biggest barriers are no longer technological; they are regulatory alignment, reimbursement design, clinical validation, and trust. Organizations that solve those four problems will define the next decade of medicine.\n\n---\n\n*Sources: FDA, Wolters Kluwer 2026 Future Ready Healthcare, Deloitte 2026 US Health Care Executive Outlook, Bessemer Venture Partners State of Health AI 2026, OECD.AI, Rock Health, SVB Healthcare Investments H1 2026, JAMA, npj Digital Medicine, Fortune Business Insights, Precedence Research, IMARC, Frontiers in Medicine 2026, Petrie-Flom Center Harvard, EU Commission, CMS, AHA.*\n"
+        }}
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {"id": "call_function_91xnobmbxlv0_1", "name": "write_todos", "args": {"todos": [
+          {"content": "Research current state of AI in medical industry (2025-2026)", "status": "done"},
+          {"content": "Research key application areas (diagnostics, drug discovery, clinical workflows, etc.)", "status": "done"},
+          {"content": "Research market size, leading companies, and investments", "status": "done"},
+          {"content": "Research regulatory landscape (FDA, EMA, etc.) and challenges", "status": "done"},
+          {"content": "Research future trends and 2026 outlook", "status": "done"},
+          {"content": "Synthesize findings into a final report", "status": "done"}
+        ]}}
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "# AI in the Medical Industry — 2026\n\n## Executive Summary\nIn 2026, AI has shifted from experimentation to clinical infrastructure. Adoption is broad, capital is flowing, and regulation is finally catching up — but bias, reimbursement, and \"shadow AI\" remain major headwinds. The defining theme this year is the move from generative AI demos to **agentic, embedded, clinically validated AI** running inside daily workflows.\n\n---\n\n## 1. Market Size & Investment\n- **Global AI in healthcare:** ~$37B (2025) → ~$51B (2026) → projected ~$744B by 2035 (CAGR ~35%).\n- **AI in pharma:** $2.0B (2025) → ~$2.5B (2026) → ~$21.5B by 2035 (CAGR 27%).\n- **Healthcare VC investment in AI exceeded $18B in 2025** — AI captured ~46% of all healthcare investment and 54% of digital health funding.\n- Mega-rounds ($300M+) and AI-native platforms (Commure at $7B valuation, Abridge, Innovaccer) led activity.\n- The \"AI-services-as-software\" model is dominant: software-level margins (70–80%+) for human-quality clinical work.\n\n## 2. Key Application Areas\n\n**Diagnostics & Imaging**\n- 1,451 cumulative FDA-cleared AI/ML medical devices by end-2025; radiology alone crossed 1,000.\n- 295 new FDA AI/ML clearances in 2025 (vs. 6 in 2015).\n- AI now handles 75%+ of routine mammography double-reads in some studies.\n\n**Drug Discovery**\n- Recursion, Insilico, Atomwise, Exscientia, BenevolentAI, Isomorphic Labs lead.\n- Insilico has 28 AI-designed candidates, ~half in trials.\n- Recursion's REC-4881 delivered platform's first clinical proof-of-concept.\n- Drug discovery = ~41% of AI pharma market; oncology and neurology dominate.\n\n**Clinical Workflows (Ambient AI)**\n- Fastest-growing AI category — ~$600M revenue in 2025, 2.4× YoY.\n- Examples: Microsoft Dragon Copilot, Epic AI Charting, Oracle Clinical AI Agent, Abridge, Commure.\n- Cuts clinician EHR time by ~13 minutes per encounter.\n- 63% of organizations have integrated AI into revenue cycle management.\n\n**Precision Medicine & Genomics**\n- Converging with CRISPR therapies, FDA's \"plausible mechanism\" pathway, liquid biopsy.\n- AI + digital twins used for individualized treatment plans in oncology, rheumatology, rare disease.\n\n**Surgical Robotics**\n- Intuitive Surgical (da Vinci) leads; Medtronic (Hugo), Stryker (Mako), Zimmer Biomet (ROSA), CMR Surgical (Versius) expanding.\n- Telesurgery milestones: 1,200 km remote renal cyst surgery in Indonesia (2024); EAU telesurgery policy (2025).\n- Three waves: descriptive → generative → agentic AI.\n\n**Mental Health**\n- Woebot, Wysa, Ebb, Flourish, Slingshot AI, Therabot address therapist shortages.\n- 60% of world lacks mental health access; 150M+ Americans in shortage areas.\n- Regulators increasingly scrutinizing therapy chatbots used by minors.\n\n**Virtual Nursing**\n- Market growing at ~15.5% CAGR (2026–2035).\n- AI handles monitoring and handoffs amid severe nursing shortages.\n\n**Agentic AI**\n- Multi-agent clinical systems outperform single LLMs by ~53% on clinical tasks (2026 systematic review).\n\n## 3. Regulatory Landscape\n- **FDA (US):** PCCP final guidance (Dec 2024) lets manufacturers pre-authorize AI/ML updates without new submissions. The core mechanism for adaptive algorithms.\n- **EU AI Act:** Most high-risk system obligations apply **August 2, 2026**. AI medical devices automatically classified as high-risk — requiring conformity assessment, risk management, transparency, human oversight, and post-market monitoring. December 2025 EU \"digital omnibus\" seeks MDR/AI Act harmonization.\n- **CMS Reimbursement:** Landmark 2026 payment code created for AI-detected coronary calcium — first major clinical AI reimbursement pathway.\n\n## 4. Challenges\n1. Algorithmic bias (~50% of studies show high risk of bias).\n2. Data privacy (HIPAA/GDPR).\n3. \"Shadow AI\" — clinicians using unvetted public LLMs.\n4. Reimbursement gaps for most clinical AI tools.\n5. Real-world validation still lags benchmark performance.\n6. Liability and accountability unclear.\n7. EHR integration remains costly.\n\n## 5. Leading Companies\n| Segment | Players |\n|---|---|\n| Drug Discovery | Recursion, Insilico, Atomwise, Exscientia, Isomorphic Labs, BenevolentAI |\n| Imaging AI | Aidoc, Viz.ai, HeartFlow, Annalise.ai |\n| Documentation | Microsoft Dragon Copilot, Epic, Abridge, Commure |\n| Surgical Robotics | Intuitive Surgical, Medtronic, Stryker, CMR Surgical |\n| Decision Support | Wolters Kluwer (UpToDate Expert AI), RAAPID, Tempus |\n\n## 6. Key 2026 Trends\n1. Clinical-grade generative AI embedded in workflows\n2. Agentic AI moves to production\n3. CMS formalizes AI payment codes\n4. Cash-pay consumer AI health accelerates\n5. AI data infrastructure emerges as a category\n6. Value-based care AI revival\n7. Governance frameworks catch up\n8. Ambient scribes cross the enterprise chasm\n9. Specialty-specific AI models proliferate\n10. Telesurgery + 5G scales commercially\n\n## 7. Outlook\n2026 is the year AI becomes **infrastructure** in medicine — not a flashy demo but an essential layer. The biggest barriers are no longer technological; they are regulatory alignment, reimbursement, clinical validation, and trust. Organizations that solve these will define the next decade of medicine.\n\n---\n*Report saved to `ai-medical-industry-2026.md`.*\n\n**Sources:** FDA • Wolters Kluwer 2026 Future Ready Healthcare • Deloitte 2026 US Health Care Executive Outlook • Bessemer State of Health AI 2026 • OECD.AI • Rock Health • SVB H1 2026 • JAMA • npj Digital Medicine • Fortune Business Insights • Precedence Research • IMARC • Frontiers in Medicine 2026 • Petrie-Flom Center (Harvard) • EU Commission • CMS • AHA.",
+      "tool_calls": []
+    }
+  ]
+}

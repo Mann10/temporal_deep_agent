@@ -1,0 +1,41 @@
+{
+  "name": "simple-research-example",
+  "description": "Parent plans, delegates to researcher, returns final answer. 3 turns.",
+  "steps": [
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_1",
+          "name": "write_todos",
+          "args": {
+            "todos": [
+              {"status": "in_progress", "content": "Research the topic via web search"},
+              {"status": "pending", "content": "Synthesize findings into a final answer"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_2",
+          "name": "task",
+          "args": {
+            "subagent_type": "researcher",
+            "description": "Find key facts about the user's topic"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "Based on the research, here is the answer to your question.",
+      "tool_calls": []
+    }
+  ]
+}

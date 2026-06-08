@@ -1,0 +1,8 @@
+temporalio[langgraph]>=1.27.0
+deepagents>=0.6.0
+langchain>=0.3
+langchain-openai
+langchain-ollama
+tavily-python
+python-dotenv
+pydantic>=2
