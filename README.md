@@ -139,7 +139,8 @@ flowchart TD
         D -->|write_todos| WT
         WT -->|"save to state"| P
 
-        D -->|task| V
+        D -->|task| TK
+        TK --> V
         V -->|pass| CH
         V -->|fail| P
 
