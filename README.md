@@ -103,68 +103,7 @@ The LLM calls tools via tool schemas. Tools are registered in `activities/tools.
 
 ## End-to-end architecture diagram
 
-```mermaid
-flowchart TD
-    U["User CLI / API caller"]
-    S["starter.py"]
-
-    U --> S
-    S -->|start_workflow| P
-
-    subgraph "Temporal Runtime"
-        P["DeepAgentWorkflow"]
-        LLM["Activity: llm_step"]
-        D["_dispatch"]
-
-        WT["write_todos\n(kind: in_workflow)"]
-        TK["task"]
-        GT["Generic tools\n(read/write/edit_file,\nls, glob, grep)"]
-        WS["web_search\n(kind: dedicated)"]
-
-        RT["_run_tool activity"]
-        WSA["web_search activity"]
-        BK["backend.py (LocalFSBackend)"]
-        TV["TavilyClient"]
-
-        V{"validate: task?"}
-        CH["SubAgentWorkflow"]
-        CLLM["Activity: llm_step (child)"]
-        CTK["Child _dispatch"]
-        CR["continue-as-new"]
-        FS["fs_data/reports/{topic-slug}.md"]
-
-        P --> LLM
-        LLM -->|tool_calls| D
-
-        D -->|write_todos| WT
-        WT -->|"save to state"| P
-
-        D -->|task| TK
-        TK --> V
-        V -->|pass| CH
-        V -->|fail| P
-
-        D -->|generic| GT
-        GT --> RT
-        RT --> BK
-
-        D -->|dedicated| WS
-        WS --> WSA
-        WSA --> TV
-
-        CH --> CLLM
-        CLLM -->|tool_calls| CTK
-        CTK -->|generic| GT
-        CTK -->|dedicated| WS
-        CTK -->|write_todos| CH
-    end
-
-    CH -->|string result| P
-    P --> R["Final answer to caller"]
-    P --> CR
-    CR --> P
-    P --> FS
-```
+![Temporal Deep Agent Architecture](docs/temporal_deep_agent.png)
 
 ## Sequence diagrams
 
